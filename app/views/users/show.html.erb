@@ -2,6 +2,11 @@
 
 <p>
   <strong>Name:</strong>
+  <%= @user.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
   <%= @user.name %>
 </p>
 
@@ -13,7 +18,7 @@
 
 <p>
   <strong>Microposts:</strong>
-  <%= @user.microposts.first.content %>
+  <%= @user.microposts.all.content %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
